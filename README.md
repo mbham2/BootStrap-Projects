@@ -1,2 +1,0 @@
-# Portfolio
-Nucamp Portfolio Project
