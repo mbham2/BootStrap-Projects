@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--Additional CSS musct be placed after Bootstrap CSS-->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="css/music.css">
+    <title>Music Cafe</title>
+</head>
+
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-sm-3 col-md-4 align-self-center">
+
+                </div>
+                <div>
+                    <h1><img src="image/tanpura.jpg" class="image-fluid" width="100px">Music cafe</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-secondary sticky-top">
+        <div class="container">
+            <img src="image/tanpura.jpg" class="image-fluid" width="30px" height="30px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMusic"
+                aria-controls="navbarMusic" aria-expanded="false" aria-label="Toggle-navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-auto" id="navbarMusic">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html" id="home"><i class="fa fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-music"></i>
+                        Music
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Home.html">Music</a></li>
+                        <li><a class="dropdown-item" href="library.html">Music Library</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-bar-chart-o"></i>
+                        Business
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="business.html">Buy/Sell/Rent</a></li>
+                        <li><a class="dropdown-item" href="business.html">Vocal Classes/Instrument Classes/Percussion
+                                Classes</a></li>
+                        <li><a class="dropdown-item" href="business.html">Concerts Locations</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-info"></i>Membership Info
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Artist/User</a></li>
+                    </ul>
+                </li>
+                <span class="navbar-text ml-auto">
+                    <a role="button" id="loginButton" data-target="#loginModal">
+                        <i class="fa fa-sign-in"></i>Login
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group">
+                                <label for="inputEmail">User Name or E-mail ID</label>
+                                <input type="email" class="form-control form-control-sm" id="inputEmail"
+                                    placeholder="User Name or E-mail ID">
+                            </div>
+                            <div clss="form-group">
+                                <label for="inputPassword">Password</label>
+                                <input type="password" class="form-control form-control-sm" id="inputPassword"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Remember me</label>
+                            </div>
+                            <div class="form-row">
+                                <button type="submit" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Vocal-->
+    <div class="container">
+        <div class="row justify-content-around pt-5">
+            <div class="col-sm-6 col-md-6">
+                <div class="card w-100">
+                    <div class="card-header">
+                        Hindustani Vocal
+                    </div>
+                    <img class="card-img-top" src="image/HINDUSTANI.jpg" style="width:10rem;" alt="hindustani">
+                    <div class="card-body">
+                        <p class="card-text">When there is a singer performing in Hindustani, there is usually a
+                            Tanpura,Harmoni accompaniment and percussion instruments.Hindustani use solfeggio,
+                            except the names of the notes are sa,ri or re, ga, ma, pa, dha, and ni
+                            (These are abbreviations of shadja, rishabha, gāndhāra,madhyama, pancama, daivata,
+                            and niṣāda). These are referred to swar. The vocalist may sing these in a performance.</p>
+                        <audio controls>
+                            <source src="audio/Hindustani.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="card w-100">
+                    <div class="card-header">
+                        Carntic Vocal
+                    </div>
+                    <img class="card-img-top" src="image/CARNATIC.jpg" style="width:10rem;" alt="carnatic">
+                    <div class="card-body">
+                        <p class="card-text">When there is a singer performing Carnatic, there is usually a Tanpura,
+                            Violin accompaniment and percussion instruments. Carnatic use solfeggio, except the names
+                            of the notes are sa,ri or re, ga, ma, pa, da and ni (These are abbreviations of shadja,
+                            rishabha, gāndhāra,madhyama, pancama, daivata, and niṣāda). These are referred to swara.
+                            The vocalist may sing these in a performance.</p>
+                        <audio controls>
+                            <source src="audio/Carnatic.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--String Instruments starts here-->
+    <div class="container">
+        <div class="row justify-content-around pt-5">
+            <div class="col-sm-6 col-md-6">
+                <div class="card w-100">
+                    <div class="card-header">
+                        Veena
+                    </div>
+                    <img class="card-img-top" src="image/veena.jpg" style="width:11.1rem;" alt="veena">
+                    <div class="card-body">
+                        <p class="card-text">Veena is a string instrument.Veena is played in Carnatic music. It is held
+                            in a horizontal position, and
+                            it has a hollowed out bowl on both of the sides.One of the bowls is held on the left thigh.
+                            There is a large body where there are many frets and an ending, where the strings over the
+                            larger bowl.A player uses their left hand to cover the desired frets and their right hand to
+                            vibrate the strings.</p>
+                        <audio controls>
+                            <source src="audio/veena.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="card w-100">
+                    <div class="card-header">
+                        Violin
+                    </div>
+                    <img class="card-img-top" src="image/violin.jpg" style="width:10rem;" alt="violin">
+                    <div class="card-body">
+                        <p class="card-text">Violin is a string instrument. This instrument was adapted into Carnatic
+                            music by Baluswami Dikshitar.
+                            V.G. Jog is credited with introducing the violin to Hindustani music. In Indian classical
+                            music, the violin is played seated on the floor with the scroll on the musician’s right
+                            foot. The
+                            tuning system is also different from methods used in Western classical music. In Carnatic
+                            music,
+                            the violin is the most common instrument used for accompaniment.</p>
+                        <audio controls>
+                            <source src="audio/Violin.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="card w-100">
+                    <div class="card-header">
+                        Sitar
+                    </div>
+                    <img class="card-img-top" src="image/sitar.jpg" style="width:12rem;" alt="sitar">
+                    <div class="card-body">
+                        <p class="card-text">Sitar is a string instrument which has 13 strings. It is held at a 45
+                            degree
+                            angle on the lap of the player. The player plucks the strings with a finger covering, while
+                            also
+                            covering the frets
+                            with the other hand. It is known as the South Asian lute.</p>
+                        <audio controls>
+                            <source src="audio/Sitar.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="card w-100">
+                    <div class="card-header">
+                        Sarod
+                    </div>
+                    <img class="card-img-top" src="image/sarod.jpg" style="width:10rem;" alt="sarod">
+                    <div class="card-body">
+                        <p class="card-text">Sarod is a string instrument from the lute family used in Hindustani music.
+                            It has a wide fingerboard that is fretless so that gamakas can be played easily. There are
+                            four to
+                            six main strings,
+                            and drone and sympathetic strings also. The Sarod player plucks the strings to make sounds.
+                        </p>
+                        <audio controls>
+                            <source src="audio/Sarod.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Wind Instruments start here-->
+    <div class="container">
+        <div class="row justify-content-around pt-5">
+            <div class="col-sm-6 col-md-6">
+                <div class="card w-100">
+                    <div class="card-header">
+                        Venu
+                    </div>
+                    <img class="card-img-top" src="image/flute.jpg" style="width:10rem;" alt="flute">
+                    <div class="card-body">
+                        <p class="card-text">Venu is a wind instrument. The Venu is made out of bamboo, and there are
+                            two types of flutes that are
+                            created. A transverse
+                            flute is a bamboo stick that has holes in it, and this is the best for classical music. A
+                            fipple
+                            flute does not have the same structure and it is used in the creation of music for
+                            movies.The name
+                            of flute changes from region to region, but two of the most common names for flute are Veenu
+                            and
+                            Bansuri.</p>
+                        <audio controls>
+                            <source src="audio/flute.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="card w-100">
+                    <div class="card-header">
+                        Bansuri
+                    </div>
+                    <img class="card-img-top" src="image/bansuri.jpg" style="width:13.6rem;" alt="bansuri">
+                    <div class="card-body">
+                        <p class="card-text">Bansuri is a wind instrument, and it is made out of wood and metal. It is
+                            used
+                            in temples and other
+                            places. It is accompanied by thavil or dolu. It is a very long piece of wood that has seven
+                            holes.
+                            The breath control of the nadaswaram is hard to master. It is also a reed instrument.
+                        </p>
+                        <audio controls>
+                            <source src="audio/bansuri.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="card w-100">
+                    <div class="card-header">
+                        Nadaswaram
+                    </div>
+                    <img class="card-img-top" src="image/nadaswram.jpg" style="width:16rem;" alt="nadaswaram">
+                    <div class="card-body">
+                        <p class="card-text">Nadaswaram a wind instrument, and it is made out of wood and metal. It is
+                            used
+                            in temples and other places. It is accompanied by thavil or dolu. It is a very long piece of
+                            wood that has seven holes. The breath control of the nadaswaram is hard to master. It is
+                            also a reed instrument.
+                        </p>
+                        <audio controls>
+                            <source src="audio/Nadaswaram.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="card w-100">
+                    <div class="card-header">
+                        Harmonium
+                    </div>
+                    <img class="card-img-top" src="image/harmonium.jpg" style="width:5.5rem;" alt="harmonium">
+                    <div class="card-body">
+                        <p class="card-text">Harmonium is a wind instrument. The harmonium was created in Europe by
+                            Gabriel Joseph Grenié, and was
+                            further worked on by Debain.
+                            It was exported to India, where Dwarkanath Ghose modified it to be able to play Indian
+                            music. The
+                            harmonium initially was not very popular, but it was put into the spotlight by great
+                            Hindustani
+                            musicians such as Pandit Bhimsen Joshi and Ustad Bade Ghulam Ali Khan. It is now a very
+                            popular
+                            accompaniment in Hindustani music and has a place in devotional music.
+                        </p>
+                        <audio controls>
+                            <source src="audio/harmonium.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Percussion Instruments start here-->
+    <div class="container">
+        <div class="row justify-content-around pt-5">
+            <div class="col-sm-6 col-md-6">
+                <div class="card w-100">
+                    <div class="card-header">
+                        Mrudangam
+                    </div>
+                    <img class="card-img-top" src="image/mrudagam.jpg" style="width:10rem;" alt="mrudagam">
+                    <div class="card-body">
+                        <p class="card-text">Mrudangam is a percussion instrument. The Mrudangam is a two headed drum
+                            used
+                            in Carnatic music.
+                            It is usually the main percussion instrument in a concert. The long barrel is made out of
+                            wood
+                            and the ropes
+                            across the sides of the instrument are leather. The heads, multiple layers thick, are made
+                            out
+                            of various animal skins.
+                            On the right head of the instrument, there is a black circle made out of a dried paste of
+                            ashes,
+                            boiled
+                            rice and fine flour.</p>
+                        <audio controls>
+                            <source src="audio/mrudamgam.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="card w-100">
+                    <div class="card-header">
+                        Ghatam
+                    </div>
+                    <img class="card-img-top" src="image/ghtam.jpg" style="width:8rem;" alt="ghatam">
+                    <div class="card-body">
+                        <p class="card-text">Ghatam is a percussion instrument. A Ghatam is a Carnatic percussion
+                            instrument
+                            that is a large pot made out of clay. This has a small
+                            opening at the top. Ghatams of different sizes are used for different pitches. The Ghatam
+                            vidvān
+                            (artist) sits on the floor and plays the Ghatam in their lap. Sound is made by striking the
+                            pot
+                            with
+                            one’s fingers
+                        </p>
+                        <audio controls>
+                            <source src="audio/ghatam.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="card w-100">
+                    <div class="card-header">
+                        Pakhawaj
+                    </div>
+                    <img class="card-img-top" src="image/pakhawaj.jpg" style="width:8rem;" alt="pakhavaj">
+                    <div class=" card-body">
+                        <p class="card-text">Pakhawaj is a percussion instrument. Like the mridangam, this is a
+                            two-headed
+                            drum
+                            with
+                            a smaller and higher-pitched right head and a lower and larger left head. The barrel shaped
+                            body
+                            of
+                            it
+                            is made out of wood. Both heads are made up of several layers of animal skin. There is a
+                            black
+                            paste
+                            applied to the right head, but on the left head, there is a temporary paste of flour mixed
+                            with
+                            water applied.
+                            This is a more sensitive-sounding instrument than the tabla and is used in dhrupad singing.
+                            This
+                            is
+                            mostly used in
+                            Hindustani music also.</p>
+                        <audio controls>
+                            <source src="audio/pakhawaj.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="card w-100">
+                    <div class="card-header">
+                        Tabla
+                    </div>
+                    <img class="card-img-top" src="image/tabla.jpg" style="width:13.5rem;" alt="tabla">
+                    <div class="card-body">
+                        <p class="card-text">Tabla is a percussion instrument. It is a pair of drums that is mostly
+                            played in North India. One of the
+                            drums
+                            is of
+                            higher pitch
+                            which is called the daya. This is higher pitched, and made out of wood. The baya is played
+                            with
+                            the
+                            left hand and has a lower pitch. It is made out of copper. There is a black circle on the
+                            drums
+                            that
+                            helps with generating different pitches.
+                        </p>
+                        <audio controls>
+                            <source src="audio/tabla.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row row-content align-items-center">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href=#>Membership Info</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                            class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a role="button" class="btn btn-link" href="tel:1206555-1234"><i
+                            class="fa fa-phone fa-lg text-dark"></i> 1-248-123-1234</a><br />
+                    <a role="button" class="btn btn-link" href="email:campsites@nucamp.co"><i
+                            class="fa fa-envelope fa-lg text-dark"></i>contactus@musiccafe.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+    <!--<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
+    <script src="portfolio.js"></script>
+
+</body>
+
+
+</html>
