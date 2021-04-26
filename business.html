@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--Additional CSS musct be placed after Bootstrap CSS-->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/music.css">
+    <title>Music Cafe</title>
+</head>
+
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-sm-3 col-md-4 align-self-center">
+
+                </div>
+                <div>
+                    <h1><img src="image/tanpura.jpg" class="image-fluid" width="100px">Music Library</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-secondary sticky-top">
+        <div class="container">
+            <img src="image/tanpura.jpg" class="image-fluid" width="30px" height="30px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMusic"
+                aria-controls="navbarMusic" aria-expanded="false" aria-label="Toggle-navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-auto" id="navbarMusic">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html" id="home"><i class="fa fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Music.html" id="music"><i class="fa fa-music"></i>
+                        Music
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="library.html" id="library"><i class="fa fa-users"></i>Music
+                        Library</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="business.html" id="business"><i class="fa fa-bar-chart-o"></i>
+                        Business
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="membership.html" id="membership">
+                        <i class="fa fa-info"></i>Membership Info
+                    </a>
+                </li>
+                <span class="navbar-text ml-auto">
+                    <a role="button" id="loginButton" data-target="#loginModal">
+                        <i class="fa fa-sign-in"></i>Login
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-bs-dismiss="modal" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group">
+                                <label for="inputEmail">User Name or E-mail ID</label>
+                                <input type="email" class="form-control form-control-sm" id="inputEmail"
+                                    placeholder="User Name or E-mail ID">
+                            </div>
+                            <div clss="form-group">
+                                <label for="inputPassword">Password</label>
+                                <input type="password" class="form-control form-control-sm" id="inputPassword"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Remember me</label>
+                            </div>
+                            <div class="form-row">
+                                <button type="submit" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-sm-6 col-md-6 col-lg">
+                <div class="card border-dark">
+                    <div class="card-body" id="buyCard">
+                        <h5>Buy/Sell/Rent</h5>
+                        <form>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRiadioOptions" id="inlineBuy">
+                                <label class="form-check-label" for="inlineBuy">Buy</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRiadioOptions" id="inlineSell">
+                                <label class="form-check-label" for="inlineSell">Sell</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRiadioOptions" id="inlineRent">
+                                <label class="form-check-label" for="inlineRent">Rent</label>
+                            </div>
+                            <br>
+                            <div class="form-check form-check-inline pt-2">
+                                <input class="form-check-input" type="checkbox" id="inlineString">
+                                <label class="form-check-label" for="inlineString">String Instrument</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineWind">
+                                <label class="form-check-label" for="inlineWind">Wind Instrument</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlinePercussion">
+                                <label class="form-check-label" for="inlinePercussion">Percussion Instrument</label>
+                            </div>
+
+                            <div class="form-group pt-2">
+                                <label for="stringForm">Select String Instrument</label>
+                                <select multiple class="form-control" id="stringForm">
+                                    <option>Tanpura</option>
+                                    <option>Veena</option>
+                                    <option>Violin</option>
+                                    <option>Sitar</option>
+                                    <option>Sarod</option>
+                                </select>
+                            </div>
+                            <div class="form-group pt-2">
+                                <label for="windForm">Select Wind Instrument</label>
+                                <select multiple class="form-control" id="windForm">
+                                    <option>Flute</option>
+                                    <option>Bansuri</option>
+                                    <option>Nadaswaram</option>
+                                    <option>Harmonium</option>
+                                </select>
+                            </div>
+                            <div class="form-group pt-2">
+                                <label for="percussionForm">Select Percussion Instrument</label>
+                                <select multiple class="form-control" id="percussionForm">
+                                    <option>Mrudangam</option>
+                                    <option>Tabla</option>
+                                    <option>Pakhawaj</option>
+                                    <option>Ghatam</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="btn btn-secondary" id="submit">Submit</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--classes start here-->
+    <br>
+    <br>
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-sm-6 col-md-6 col-lg">
+                <h4 style="display: flex;">Vocal Classes</h4>
+                <p>Contact vocal@gmail.com</p>
+                <div class="card border-dark" style="width:25.2rem;" id="classCard">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60883.744435531495!2d78.52286967069806!3d17.496338431322126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9b0d15e4d735%3A0xb53223047e34a9b0!2sSainikpuri%2C%20Secunderabad%2C%20Telangana%2C%20India!5e0!3m2!1sen!2sus!4v1619213383976!5m2!1sen!2sus"
+                        width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+            <div class="col-sm-4 pb-5">
+                <h4 style="display: flex;">Flute Classes</h4>
+                <p>Contact flute@gmail.com</p>
+                <div class="card border-dark" style="width:25.2rem;" id="classCard">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62039.91372406108!2d79.3897813685248!3d13.627649999465868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4b0f88620427%3A0xcf4152d1daca0cac!2sTirupati%2C%20Andhra%20Pradesh%2C%20India!5e0!3m2!1sen!2sus!4v1619214305755!5m2!1sen!2sus"
+                        width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+            <div class="col-sm-4 pb-5">
+                <h4 style="display: flex;">Violin Classes</h4>
+                <p>Contact violin@gmail.com</p>
+                <div class="card border-dark" style="width:25.2rem;" id="classCard">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30449.137425338053!2d78.51213295223467!3d17.45290778450972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9bcbae0e1275%3A0x3de1a899ac941fd3!2sMalkajgiri%2C%20Secunderabad%2C%20Telangana%2C%20India!5e0!3m2!1sen!2sus!4v1619214672099!5m2!1sen!2sus"
+                        width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+            <div class="col-sm-4 pb-5">
+                <h4 style="display: flex;">Tabla Classes</h4>
+                <p>Contact tabla@gmail.com</p>
+                <div class="card border-dark" style="width:25.2rem;" id="classCard">
+                    <div class="col-sm-4">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23645.947422603684!2d-87.9346646168338!3d42.19855311866189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fbe6afc6f3f0d%3A0x520c50762fbf3b7f!2sLincolnshire%2C%20IL!5e0!3m2!1sen!2sus!4v1619214751323!5m2!1sen!2sus"
+                            width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 pb-5">
+                <h4 style="display: flex;">Mrudangam Classes</h4>
+                <p>Contact mrugangam@gmail.com</p>
+                <div class="card border-dark" style="width:25.2rem;" id="classCard">
+                    <div class="col-sm-4">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248756.11675282012!2d80.06892698566945!3d13.047487786985135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1619215037963!5m2!1sen!2sus"
+                            width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 pb-5">
+                <h4 style="display: flex;">Veena Classes</h4>
+                <p>Contact veena@gmail.com</p>
+                <div class="card border-dark" style="width:25.2rem;" id="classCard">
+                    <div class="col-sm-4">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95258.13169128097!2d-88.23192245194525!3d41.74604823346808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e5761e216cd07%3A0x87df9c2c7f203052!2sNaperville%2C%20IL!5e0!3m2!1sen!2sus!4v1619215110134!5m2!1sen!2sus"
+                            width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Concert locations-->
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-sm-6 col-md-6 col-lg">
+
+                <div class="form-group">
+                    <div class="card border-dark" style="width:50rem;" id="classCard">
+                        <div class="card-header">Concert locations</div>
+                        <div class="card-body" id="textArea" rows="6">Concerts will be announces shortly.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--footer start-->
+    <br>
+    <br>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row row-content align-items-center">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="library.html">Music Library</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="membership.html">Membership Info</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                            class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a role="button" class="btn btn-link" href="tel:1206555-1234"><i
+                            class="fa fa-phone fa-lg text-dark"></i> 1-248-123-1234</a><br />
+                    <a role="button" class="btn btn-link" href="email:campsites@nucamp.co"><i
+                            class="fa fa-envelope fa-lg text-dark"></i>contactus@musiccafe.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+    <!--<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
+    <script src="portfolio.js"></script>
+
+</body>
+
+
+</html>

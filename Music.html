@@ -9,7 +9,7 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!--Additional CSS musct be placed after Bootstrap CSS-->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/music.css">
     <title>Music Cafe</title>
 </head>
@@ -41,36 +41,24 @@
                         Home
                     </a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-music"></i>
+                <li class="nav-item">
+                    <a class="nav-link" href="Music.html" id="music"><i class="fa fa-music"></i>
                         Music
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="Home.html">Music</a></li>
-                        <li><a class="dropdown-item" href="library.html">Music Library</a></li>
-                    </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-bar-chart-o"></i>
-                        Business
+                <li class="nav-item">
+                    <a class="nav-link" href="library.html" id="library"><i class="fa fa-users"></i>Music
+                        Library</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="business.html" id="business"><i class="fa fa-bar-chart-o"></i>
+                    Business
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="business.html">Buy/Sell/Rent</a></li>
-                        <li><a class="dropdown-item" href="business.html">Vocal Classes/Instrument Classes/Percussion
-                                Classes</a></li>
-                        <li><a class="dropdown-item" href="business.html">Concerts Locations</a></li>
-                    </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                <li class="nav-item">
+                    <a class="nav-link" href="membership.html" id="membership">
                         <i class="fa fa-info"></i>Membership Info
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Artist/User</a></li>
-                    </ul>
                 </li>
                 <span class="navbar-text ml-auto">
                     <a role="button" id="loginButton" data-target="#loginModal">
@@ -453,8 +441,9 @@
                     <ul class="list-unstyled">
                         <li><a href="home.html">Home</a></li>
                         <li><a href="#">Music</a></li>
-                        <li><a href="#">Business</a></li>
-                        <li><a href=#>Membership Info</a></li>
+                        <li><a href="library.html">Music Library</a></li>
+                        <li><a href="business.html">Business</a></li>
+                        <li><a href="membership.html">Membership Info</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5 text-center">
@@ -477,30 +466,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

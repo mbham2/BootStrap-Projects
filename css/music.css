@@ -74,18 +74,18 @@
 
 .para {
   width:1200px;
-  border:1px solid black;
+  border:1px dashed black;
+  border-radius: 2%;
   align-items:center;
   font-size: x-large;
   font-style: oblique;
-  padding:2%;
-  margin: 5% 10% 5% 15%;
   word-spacing: 20px;
- 
+ padding:10%;
 }
 
-footer{
+.site-footer{
   background:lightgrey;
+  margin-left:0;
 }
 
 .btn-link{
@@ -107,16 +107,6 @@ marquee{
   transition:all 0.4s;
   font-size: larger;
   text-decoration: center;
-}
-
-.page-content{
-  width:calc(100%-17rem);
-  margin-left:17rem;
-}
-
-.market-content{
-  width:calc(100%-17rem);
-  margin-left:20rem;
 }
 
 .form-border{
