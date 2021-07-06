@@ -1,5 +1,8 @@
+* {
+  box-sizing:border-box;
+}
 
-  h1,h2 {
+h1,h2 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin-top:1%;
     margin-bottom:1%;
@@ -73,15 +76,15 @@
 }
 
 .para {
-  width:1200px;
-  border:1px dashed black;
-  border-radius: 2%;
-  align-items:center;
+  width:200%;
+  border-color: black;
+  border-radius: 10px;
+  border-style: dashed;
   font-size: x-large;
   font-style: oblique;
   word-spacing: 20px;
- padding:10%;
-}
+  padding:5%;
+  }
 
 .site-footer{
   background:lightgrey;
@@ -137,10 +140,9 @@ marquee{
   }
 
   .container{
-    position: relative;
+    position:relative;
     display: flex;
-    
-  }
+    }
   .container:hover .overlay{
     transform: scale(1);
   }
@@ -152,4 +154,10 @@ marquee{
   .btn {
     justify-content: center;
     align-items: center;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .para {
+      width:100%;
+           }
   }
